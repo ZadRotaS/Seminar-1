@@ -29,4 +29,19 @@ while (i < m)
         i += 1;
     }
 }
-Console.Write("максимальное число: " + max.ToString());
+i = 0;
+int min = array[i];
+while (i < m)
+{
+    if (array [i] < min)
+    {
+        min = array[i];
+        i += 1;
+    }
+    else
+    {
+        i += 1;
+    }
+}
+Console.WriteLine("максимальное число: " + max.ToString());
+Console.WriteLine("минимальное число: " + min.ToString());
