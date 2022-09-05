@@ -1,0 +1,15 @@
+C:\Users\ops07\OneDrive\Рабочий стол\DZ\3\Seminar8_DZ\obj\Debug\net6.0\Seminar8_DZ.csproj.AssemblyReference.cache
+C:\Users\ops07\OneDrive\Рабочий стол\DZ\3\Seminar8_DZ\obj\Debug\net6.0\Seminar8_DZ.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ops07\OneDrive\Рабочий стол\DZ\3\Seminar8_DZ\obj\Debug\net6.0\Seminar8_DZ.AssemblyInfoInputs.cache
+C:\Users\ops07\OneDrive\Рабочий стол\DZ\3\Seminar8_DZ\obj\Debug\net6.0\Seminar8_DZ.AssemblyInfo.cs
+C:\Users\ops07\OneDrive\Рабочий стол\DZ\3\Seminar8_DZ\obj\Debug\net6.0\Seminar8_DZ.csproj.CoreCompileInputs.cache
+C:\Users\ops07\OneDrive\Рабочий стол\DZ\3\Seminar8_DZ\bin\Debug\net6.0\Seminar8_DZ.exe
+C:\Users\ops07\OneDrive\Рабочий стол\DZ\3\Seminar8_DZ\bin\Debug\net6.0\Seminar8_DZ.deps.json
+C:\Users\ops07\OneDrive\Рабочий стол\DZ\3\Seminar8_DZ\bin\Debug\net6.0\Seminar8_DZ.runtimeconfig.json
+C:\Users\ops07\OneDrive\Рабочий стол\DZ\3\Seminar8_DZ\bin\Debug\net6.0\Seminar8_DZ.dll
+C:\Users\ops07\OneDrive\Рабочий стол\DZ\3\Seminar8_DZ\bin\Debug\net6.0\Seminar8_DZ.pdb
+C:\Users\ops07\OneDrive\Рабочий стол\DZ\3\Seminar8_DZ\obj\Debug\net6.0\Seminar8_DZ.dll
+C:\Users\ops07\OneDrive\Рабочий стол\DZ\3\Seminar8_DZ\obj\Debug\net6.0\refint\Seminar8_DZ.dll
+C:\Users\ops07\OneDrive\Рабочий стол\DZ\3\Seminar8_DZ\obj\Debug\net6.0\Seminar8_DZ.pdb
+C:\Users\ops07\OneDrive\Рабочий стол\DZ\3\Seminar8_DZ\obj\Debug\net6.0\Seminar8_DZ.genruntimeconfig.cache
+C:\Users\ops07\OneDrive\Рабочий стол\DZ\3\Seminar8_DZ\obj\Debug\net6.0\ref\Seminar8_DZ.dll
