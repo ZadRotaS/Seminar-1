@@ -9,7 +9,11 @@ void Select(string[] words)
 void SelectTesk()
 
 {
-    string[] namesTesk = { "Задача 1. Двумерный массив заполненный случайными вещественными числами", "Задача 2. Произведение пар чисел в одномерном массиве", "Задача 3. Найти среднее арифметическое элементов в каждом столбце" };
+    string[] namesTesk = {  "Задача 1. Упорядочить по убыванию элементы каждой строки двумерного массива",
+                            "Задача 2. Находить строку с наименьшей суммой элементов",
+                            "Задача 3. Находить произведение двух матриц",
+                            "Задача 4. Построчно выводить массив, добавляя индексы каждого элемента",
+                            "Задача 5. Заполнит спирально массив N на N" };
     Console.WriteLine("Задачи:");
     Select(namesTesk);
     Console.Write("Выбери задачу: ");
@@ -90,14 +94,7 @@ int[,] NewIntArray()
     int[,] mast = new int[m, y];
     return mast;
 }
-//void PrintArray1(int[] mast) // Вывести моссив в консоль
-//{
-// for (int i = 0; i < mast.Length; i++)
-//  {
-//      Console.Write(mast[i] + " ");
-//   }
-//  Console.WriteLine();
-//}
+
 string Text = string.Empty;
 
 while (Text != "q")
@@ -163,7 +160,7 @@ while (Text != "q")
     }
     if (x == 3)
     {
-        static int[,] MatrixProduct(int[,] matrixA,int[,] matrixB)
+        static int[,] MatrixProduct(int[,] matrixA, int[,] matrixB)
         {
 
             int aRows = matrixA.GetLength(0); int aCols = matrixA.GetLength(1);
@@ -183,7 +180,83 @@ while (Text != "q")
         int[,] array3 = MatrixProduct(array1, array2);
         PrintIntArray(array1); PrintIntArray(array2); PrintIntArray(array3);
     }
+    if (x == 4)
+    {
+        void FillIntArray3(int[,,] mast, int min, int max)
+        {
+            for (int n = 0; n < mast.GetLength(0); n++)
+            {
+                for (int i = 0; i < mast.GetLength(1); i++)
+                {
+                    for (int j = 0; j < mast.GetLength(2); j++)
+                    {
+                        mast[n, i, j] = new Random().Next(min, max);
+                    }
+                }
+            }
+        }
+        int[,,] array = new int[2, 2, 2];
+        FillIntArray3(array, 1, 100);
+        for (int n = 0; n < array.GetLength(0); n++)
+        {
+            for (int i = 0; i < array.GetLength(1); i++)
+            {
+                for (int j = 0; j < array.GetLength(2); j++)
+                {
+                    Console.Write($"{array[n, i, j]} ({n},{i},{j}) ");
+                }
+                Console.WriteLine();
+            }
 
+        }
+
+    }
+    if (x == 5)
+    {
+        Console.Write("Введите число N: "); int N = Convert.ToInt32(Console.ReadLine());
+        int[,] array = new int[N, N];
+        int IndexA = 0, IndexB = 0, m = 1;
+        for (int h = 0; h < (array.GetLength(1) + 1) / 2; h++)
+        {
+            for (int j = 0; j < array.GetLength(0) - IndexB; j++, m++)
+            {
+                array[IndexA, j] = m;
+            }
+            IndexB++;
+            for (int i = IndexB; i < array.GetLength(1) - IndexB; i++, m++)
+            {
+                array[i, array.GetLength(1) - 1 - IndexA] = m;
+            }
+
+            for (int n = array.GetLength(0) - 1 - IndexA; n >= IndexB; n--, m++)
+            {
+                array[array.GetLength(1) - 1 - IndexA, n] = m;
+            }
+            IndexA++;
+            for (int k = array.GetLength(1) - IndexB; k >= IndexB; k--, m++)
+            {
+                array[k, IndexB - 1] = m;
+            }
+        }
+        if (array.GetLength(1) % 2 != 0) { m--; array[array.GetLength(0) / 2, array.GetLength(1) / 2] = m; }
+        void PrintIntArray2(int[,] mast)
+        {
+            for (int i = 0; i < mast.GetLength(0); i++)
+            {
+                for (int j = 0; j < mast.GetLength(1); j++)
+                {
+                    if (mast[i,j] < 10)
+                    {
+                        Console.Write($"0{mast[i, j]}" + " ");
+                    }
+                    else Console.Write($"{mast[i,j]} ");
+                }
+                Console.WriteLine();
+            }
+        
+        }
+        PrintIntArray2(array);
+    }
     Console.WriteLine();
     Console.Write("Для завершения введите (q) для продолжение любой другой символ: ");
     Text = Convert.ToString(Console.ReadLine());
