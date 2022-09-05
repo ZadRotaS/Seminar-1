@@ -214,11 +214,11 @@ while (Text != "q")
     if (x == 5)
     {
         Console.Write("Введите число N: "); int N = Convert.ToInt32(Console.ReadLine());
-        int[,] array = new int[N, N];
-        int IndexA = 0, IndexB = 0, m = 1;
+        int[,] array = new int[N, N]; array[0,0] = 1;
+        int IndexA = 0, IndexB = 0, m = 2;
         for (int h = 0; h < (array.GetLength(1) + 1) / 2; h++)
         {
-            for (int j = 0; j < array.GetLength(0) - IndexB; j++, m++)
+            for (int j = 1; j < array.GetLength(0) - IndexB; j++, m++)
             {
                 array[IndexA, j] = m;
             }
